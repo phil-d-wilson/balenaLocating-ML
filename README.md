@@ -104,9 +104,9 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
   ![Tagged devices](https://i.ibb.co/PMcNJDW/Tagged-Devices.jpg)
   Now I had three lots of iBeacon telemetry coming into the IOT Hub. Better do something with it all!
   ### KNN Classification Machine Learning Algorithm
-  
+  Machine Learning (ML) is code which uses data from past runs to improve predictions made in future runs. One form of ML 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzU1MDE0NSw3NDEzOTEzMTcsLTM4Mz
+eyJoaXN0b3J5IjpbMTU0ODY4NDQzMCw3NDEzOTEzMTcsLTM4Mz
 A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
 MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
 ==
