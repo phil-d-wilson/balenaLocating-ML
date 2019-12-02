@@ -31,9 +31,18 @@ Having written Python code for iBeacon transcoding before, this seemed to obviou
 The main bits of interest here are PyBluez, which allows Python to access the Linux BlueZ Bluetooth stack and subscribe to BLE advertisements, and Azure-IOT-Device which allows us to send our data to Azure. I think added some Linux capabilities to the container, so that the code was allowed access to Bluetooth:
 
     RUN setcap 'cap_net_raw,cap_net_admin+eip' $(eval readlink -f `which python`)
+And then call the Python script:
+
+    ENTRYPOINT [ "python", "-u", "PythonScripts/main.py" ]
+   The first part of this starts a beacon scanner:
+   
+
+    scanner = BeaconScanner(callback)
+
+scanner.start()
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOT
-c3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkw
-NzUsLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbLTQyMzI5NzU2OCwtMzgzMDgxODgwLC0xNz
+IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
+ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
