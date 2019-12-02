@@ -80,10 +80,10 @@ I actually spent quite a long time trying to get the Python IOT Hub code to work
 	RUN npm install date-and-time
 	RUN JOBS=MAX npm install --production --unsafe-perm && npm cache verify && rm -rf /tmp/*
 	CMD ["npm", "start"]
-Once again you can see the references to bluez, but this time it's being used (along with make and g++) to build the @abandonware/noble  
+Once again you can see the references to bluez, but this time it's being used (along with make and g++) to build the [@abandonware/noble](https://github.com/abandonware/noble)  module. This allowed me to start a BLE scanner:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MDE5OTA2Nyw3NDEzOTEzMTcsLTM4Mz
-A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
-MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
-==
+eyJoaXN0b3J5IjpbODUxODkyNTA4LDc0MTM5MTMxNywtMzgzMD
+gxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAy
+MiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
