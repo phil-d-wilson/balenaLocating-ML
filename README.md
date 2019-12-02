@@ -178,12 +178,13 @@ The predicted class (i.e. location) is sent back from the API call.
  - The Balena development-feedback loop, even without using local mode, is tight and helpful.
  - Microsoft need to spend more time testing their Python SDKs
  - Apparently I can write (simple) Node.JS code rather quickly
- - It's possible to take 3 Raspberry Pi's, a  
+ - It's possible to take 3 Raspberry Pi's, an iBeacon tag, and a KNN algorithm and accurately predict which room of a small house the tag is in. 
 
 ### Future Steps
+There's lots more things which could (and may!) be done from here. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODI4NTIxMywtNzE1NDU1NjQ3LC0xND
+eyJoaXN0b3J5IjpbMTU0MTY4OTM0OSwtNzE1NDU1NjQ3LC0xND
 k1MDk4ODA0LDYxMDY3MDA0NCwxMjg4NzkwODEyLC0xMzg5MDM1
 NTExLDg0Mjk3MjUwMSwxOTM3ODQ4MjE4LC0yMDkxMTk3MjE3LD
 EyMjQyMDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zODMw
