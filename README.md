@@ -140,7 +140,7 @@ First I wrote some code in a C# WebApi application which connected to the IOT Hu
 Each listener added the strongest RSSI found for the specific tag. Remember I've got three sensors, so I need to find the value for each one for my training tuple.
 This was then stored in an Azure Table. I did this 7 times for each location:
 ![Training Data](https://i.ibb.co/BGvmD0d/Training-Data.jpg)
-Lots of factors affect the received signal (e.g. reflections, signal clashes, fluctuating beacon power, weather conditions, passing pigeons....etc)
+Lots of factors affect the received signal (e.g. reflections, signal clashes, fluctuating beacon power, weather conditions, passing pigeons....etc) which is why you need multiple tuples per class.
 This gave me my training data!
 
 ### Creating the KNN classifier
@@ -155,12 +155,12 @@ However, the Azure Machine Learning service proved cost prohibitive for me to le
  3. Finds the K nearest items
  4. Identifies the most frequent class in the result set
 
-You can find my implementation in this repo.
+You can find my implementation in this repo. I chose K=3  for my model because....I like 3
 ### Testing the model!
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MjE1OTg3OCwtMjA5MTE5NzIxNywxMj
-I0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgx
-ODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMi
-wxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbLTY5MjE0MDA5LC0yMDkxMTk3MjE3LDEyMj
+QyMDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zODMwODE4
+ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MDIyLD
+EzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
 -->
