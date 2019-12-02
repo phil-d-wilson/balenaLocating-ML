@@ -145,10 +145,15 @@ Initially I wanted to use the [Azure Machine Learning service](https://azure.mic
 ![enter image description here](https://i.ibb.co/wz2wC8x/Training-Azure-Model.jpg)
 which gave good indications upon evaluation that it would be a strong predictor for tag locations:
 ![enter image description here](https://i.ibb.co/4RGPJ3f/Confusion-Matrix.jpg)
-However, the Azure Machine Learning service proved cost prohibitive for me to leave running so that the web service could be used
+However, the Azure Machine Learning service proved cost prohibitive for me to leave running so that the web service could be used by my API code. So instead I coded my own (simple) version of the classifier. Simply put, this:
+
+ 1. Finds the distance from the unknown item to the training tuples
+ 2. Orders the result from closest to furthest away
+ 3. Finds the K nearest items
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMTYyMDYxNSwxMjI0MjAyNjQ1LC0xNj
-I2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgxODgwLC0xNzIyNzM1
-NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcwODEzLD
-Q4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbODUzMTgyOTg5LDEyMjQyMDI2NDUsLTE2Mj
+YwNDg4MzEsNzQxMzkxMzE3LC0zODMwODE4ODAsLTE3MjI3MzU0
+NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MDIyLDEzMTc0NzA4MTMsND
+g2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
 -->
