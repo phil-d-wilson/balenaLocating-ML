@@ -15,9 +15,25 @@ I signed up for a free Balena Cloud account, added a new application called Bale
 ![Connected to Balena Cloud](https://i.ibb.co/jhNkGfQ/Device-Online-Wifi.jpg)
 Next job: get some BLE and IOT Hub code onto the RPi and start sensing some iBeacons! "This will be easy", I thought, since I've done similar projects before......nope!
 #### Python code
-Having written Python code for iBeacon transcoding before, this seemed to obvious and quickest choice. So I created a docker file which loaded in some dependencies for Python
+Having written Python code for iBeacon transcoding before, this seemed to obvious and quickest choice. So I created a docker file which loaded in some dependencies for Python:
+
+        FROM balenalib/raspberrypi3-python:3-build
+    
+    WORKDIR /app
+    
+    RUN apt-get update && \
+        apt-get install -y --allow-unauthenticated --no-install-recommends libcap2 libcap2-bin libboost-python1.62.0 python-pip libpython-dev python-bluez bluez bluez-tools python-dev libglib2.0-dev libboost-python-dev libboost-thread-dev libbluetooth-dev && \
+        rm -rf /var/lib/apt/lists/* 
+    
+    RUN pip install --upgrade pip 
+    RUN pip install --upgrade setuptools
+    RUN pip install azure-iot-device
+    #RUN pip install azure-servicebus
+    RUN pip install PyBluez
+    RUN pip3 install beacontools[scan]
+The main bits of interest here are PyBluez which allows Python to access the Linux BlueZ Bluetooth stack and subscribe to BLE advertisements.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjYxMDM3OCwtMTcyMjczNTQ0NSwxOT
-c3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkw
-NzUsLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbLTIxMDk4NDE2NDUsLTE3MjI3MzU0NDUsMT
+k3NzU2MDU3MCwxOTQ5OTA4MDIyLDEzMTc0NzA4MTMsNDg2MjM5
+MDc1LC0xNTM2NTMwNTg0XX0=
 -->
