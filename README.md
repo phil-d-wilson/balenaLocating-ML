@@ -15,9 +15,9 @@ I signed up for a free Balena Cloud account, added a new application called Bale
 ![Connected to Balena Cloud](https://i.ibb.co/jhNkGfQ/Device-Online-Wifi.jpg)
 Next job: get some BLE and IOT Hub code onto the RPi and start sensing some iBeacons! "This will be easy", I thought, since I've done similar projects before......nope!
 #### Python code
-Having written Python code  
+Having written Python code for iBeacon transcoding before, this seemed to obvious and quickest choice. So I created a docker file which loaded in some dependenc
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzQ3NzM1NCwtMTcyMjczNTQ0NSwxOT
-c3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkw
-NzUsLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbMjE0Mjg2MTYyLC0xNzIyNzM1NDQ1LDE5Nz
+c1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcwODEzLDQ4NjIzOTA3
+NSwtMTUzNjUzMDU4NF19
 -->
