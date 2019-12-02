@@ -163,7 +163,7 @@ I re-used the IOT Hub sampling code from the training API call, but this time ra
                 var formattedResult = DataConverter.Convert(result);
                 var classification = _classificationService.Analyze(formattedResult);
                 var output = (Locations) classification;
-The "28851-396" is the UUID Major and Minor of the tag I was testing with, by the way. And I'm only asking for a 10 second sample of the telemetry, to keep things a bit quicker. My tag is broadcasting every 5 seconds, so this gives me two possible beacons to try and receive.
+The `28851-396` is the UUID Major and Minor of the tag I was testing with, by the way. And I'm only asking for a 10 second sample of the telemetry, to keep things a bit quicker. My tag is broadcasting every 5 seconds, so this gives me two possible beacons to try and receive.
 The predicted class (i.e. location) is sent back from the API call.
 
 ### It works!
@@ -192,11 +192,11 @@ Then there are lots of ideas for additional functionality, such as adding more t
 Or what about using that heatmap data to drive a K-Means model to detect abnormal movements, and then driving an alerting service with that? Does the robot hoover usually not go out of the front door? ALERT!!!!
 ![Alerting](https://i.ibb.co/2Md77wL/Alerting.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODY0MDY5MDUsMzM1OTg3Mzc2LC0xNj
-E3MTEwOTAxLDEyNjkzODI1MjEsLTEyNDk5NTI1MiwtNzE1NDU1
-NjQ3LC0xNDk1MDk4ODA0LDYxMDY3MDA0NCwxMjg4NzkwODEyLC
-0xMzg5MDM1NTExLDg0Mjk3MjUwMSwxOTM3ODQ4MjE4LC0yMDkx
-MTk3MjE3LDEyMjQyMDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMz
-E3LC0zODMwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwx
-OTQ5OTA4MDIyXX0=
+eyJoaXN0b3J5IjpbMTkxMDQ3MTc3LDMzNTk4NzM3NiwtMTYxNz
+ExMDkwMSwxMjY5MzgyNTIxLC0xMjQ5OTUyNTIsLTcxNTQ1NTY0
+NywtMTQ5NTA5ODgwNCw2MTA2NzAwNDQsMTI4ODc5MDgxMiwtMT
+M4OTAzNTUxMSw4NDI5NzI1MDEsMTkzNzg0ODIxOCwtMjA5MTE5
+NzIxNywxMjI0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNy
+wtMzgzMDgxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0
+OTkwODAyMl19
 -->
