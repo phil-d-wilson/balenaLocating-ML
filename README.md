@@ -175,16 +175,19 @@ The predicted class (i.e. location) is sent back from the API call.
 ### Lessons Learned
 
  - The Balena Cloud stack allows you to provision multiple devices in minutes (with an [Etcher Pro](https://www.balena.io/etcher/pro/) it would be even quicker!)
- - The development-feedback loop, even without using local mode, is tight and helpful.
+ - The Balena development-feedback loop, even without using local mode, is tight and helpful.
+ - Microsoft need to spend more time testing their Python SDKs
+ - Apparently I can write (simple) Node.JS code rather quickly
+ - It's possible to take 3 Raspberry Pi's, a  
 
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzE2NTM0NzcsLTcxNTQ1NTY0NywtMT
-Q5NTA5ODgwNCw2MTA2NzAwNDQsMTI4ODc5MDgxMiwtMTM4OTAz
-NTUxMSw4NDI5NzI1MDEsMTkzNzg0ODIxOCwtMjA5MTE5NzIxNy
-wxMjI0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgz
-MDgxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwOD
-AyMiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbMTYzODI4NTIxMywtNzE1NDU1NjQ3LC0xND
+k1MDk4ODA0LDYxMDY3MDA0NCwxMjg4NzkwODEyLC0xMzg5MDM1
+NTExLDg0Mjk3MjUwMSwxOTM3ODQ4MjE4LC0yMDkxMTk3MjE3LD
+EyMjQyMDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zODMw
+ODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MD
+IyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
 
 -->
