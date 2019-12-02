@@ -50,9 +50,9 @@ and registers a callback:
 	    print("Beacon found - UUID = %s, Major = %s, Minor = %s, RSSI = %s"  % (uuid, major, minor, str(rssi)))
         output =  "{\"BeaconDateTime\":\""  +  '{:%Y-%m-%d:%H-%M-%S}'.format(datetime.utcnow()) +  "\",\"DeviceName\":\""  +  str(mac) +  "\",\"BeaconName\":\""  + major +  "-"  + minor +  "\",\"Rssi\":"  +  str(rssi) +  "}"
         await HUB_MANAGER.forward_event_to_output(output)
-
+A quick push to my BalenaLocating app using the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDI0NTMyNCwtMzgzMDgxODgwLC0xNz
+eyJoaXN0b3J5IjpbMjAxNTI2MDgzMSwtMzgzMDgxODgwLC0xNz
 IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
 ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
