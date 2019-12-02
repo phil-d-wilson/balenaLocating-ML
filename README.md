@@ -12,9 +12,10 @@ First things first, I needed to get a single Raspberry Pi (RPi) connected to the
 ![enter image description here](https://lh3.googleusercontent.com/bF2x2blz45zA-yuZIgTSoqyIG5j4Lx0E5h1GiJ_HhIfZIMGqSkStKcg4Ue_c9KhKOmaIar79y0TIIQ)
 It's a plain RPi 3B+, with no extra hardware other than a Micro-SD card.
 I signed up for a free Balena Cloud account, added a new application called BalenaLocating, and added a device. I selected a development image for the RPi, configured my home WIFI and downloaded the image. I then used Etcher to burn the image to the SD card. So far, so good. Here is the device connected to the Balena Cloud, which took me less than 30 minutes including waiting for the SD card to burn!
-![Connected to Balena Cloud](https://i.ibb.co/jhNkGfQ/Device-Online-Wifi.jpg) 
+![Connected to Balena Cloud](https://i.ibb.co/jhNkGfQ/Device-Online-Wifi.jpg)
+Next job: get some BLE and IOT Hu 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MjMyOTg3NiwtMTcyMjczNTQ0NSwxOT
-c3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkw
-NzUsLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbMzAyNDM5MTEsLTE3MjI3MzU0NDUsMTk3Nz
+U2MDU3MCwxOTQ5OTA4MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1
+LC0xNTM2NTMwNTg0XX0=
 -->
