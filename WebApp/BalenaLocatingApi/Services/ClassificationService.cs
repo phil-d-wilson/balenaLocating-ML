@@ -22,27 +22,27 @@ namespace BalenaLocatingApi.Services
             var dataLength = _trainingData.Length;
             var distances = new double[dataLength];
             for (var i = 0; i < dataLength; ++i)
-                distances[i] = DistFunc(item, _trainingData[i]);
+                distances[i] = FindDistances(item, _trainingData[i]);
 
-            var ordering = new int[dataLength];
+            var orderedDistances = new int[dataLength];
             for (var i = 0; i < dataLength; ++i)
-                ordering[i] = i;
+                orderedDistances[i] = i;
             var distancesCopy = new double[dataLength];
             Array.Copy(distances, distancesCopy, distances.Length);
-            Array.Sort(distancesCopy, ordering);
+            Array.Sort(distancesCopy, orderedDistances);
 
             var kNearestDistance = new double[k];
             for (var i = 0; i < k; ++i)
             {
-                var idx = ordering[i];
-                kNearestDistance[i] = distances[idx];
+                var index = orderedDistances[i];
+                kNearestDistance[i] = distances[index];
             }
 
             var votes = new double[numberOfClasses];
             var wts = MakeWeights(k, kNearestDistance);
             for (var i = 0; i < k; ++i)
             {
-                var idx = ordering[i];
+                var idx = orderedDistances[i];
                 var predictedClass = (int)_trainingData[idx][4];
                 votes[predictedClass] += wts[i] * 1.0;
             }
@@ -64,7 +64,7 @@ namespace BalenaLocatingApi.Services
             return result;
         }
 
-        private static double DistFunc(IReadOnlyList<double> item, IReadOnlyList<double> dataPoint)
+        private static double FindDistances(IReadOnlyList<double> item, IReadOnlyList<double> dataPoint)
         {
             var sum = 0.0;
             for (var i = 0; i < 3; ++i)
