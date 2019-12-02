@@ -52,9 +52,10 @@ and registers a callback:
         await HUB_MANAGER.forward_event_to_output(output)
 A quick push to my BalenaLocating app using the [Balena CLI tools](https://www.balena.io/docs/reference/cli/#install-the-cli) showed me that I was receiving iBeacon advertisements:
 ![beacons](https://i.ibb.co/0KRsHvG/Beacons.jpg)
-Awesome! Now to send them to the IOT Hub. I've done this part before as well, albeit using Microsofts IOT Edge 
+Awesome! Now to send them to the IOT Hub. I've done this part before as well, albeit using Microsoft's [IOT Edge](https://azure.microsoft.com/en-gb/services/iot-edge/) framework and C#. Still how hard can it be using Python?!?
+![Disconnects](https://i.ibb.co/7bcd340/Disconnect-Exception.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMDA3NzAxNywtMzgzMDgxODgwLC0xNz
+eyJoaXN0b3J5IjpbMTI5NzA2NDc3NiwtMzgzMDgxODgwLC0xNz
 IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
 ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
