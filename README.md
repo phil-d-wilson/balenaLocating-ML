@@ -7,7 +7,7 @@ In order to make sure I experienced the provisioning process fully, I wanted a p
 ![Floorplan](https://i.ibb.co/pRJCqDm/Floorplan.jpg)
 My plan involved placing three Raspberry Pi 3B/3B+ devices in different downstairs rooms of my (small) house, loading them with [iBeacon](https://developer.apple.com/ibeacon/) receiving code, connecting them to Microsoft Azure via an [IOT Hub](https://azure.microsoft.com/en-gb/services/iot-hub/), pulling the data into a database, training a Machine Learning model with that data, and then trying to predict which room a tag was in. 
 ![High Level Design](https://i.ibb.co/gt2LyCK/HLD.jpg)
-The reason a Machine Learning model is necessary, is due to the weird and wonderful work of RF propagation. Suffice to say, it's not as simple as find the sensor with the strongest iBeacon s
+The reason a Machine Learning model is necessary, is due to the weird and wonderful work of RF propagation. Suffice to say, it's not as simple as find the sensor receiving the strongest iBeacon signal!
 
 ### Provisioning a device:
 First things first, I needed to get a single Raspberry Pi (RPi) connected to the Balena cloud:
@@ -140,6 +140,7 @@ First I wrote some code in a C# WebApi application which connected to the IOT Hu
 Each listener added the strongest RSSI found for the specific tag. Remember I've got three sensors, so I need to find the value for each one for my training tuple.
 This was then stored in an Azure Table. I did this 7 times for each location:
 ![Training Data](https://i.ibb.co/BGvmD0d/Training-Data.jpg)
+Lots of factors affect the received signal (e.g. reflections, signal clashes, fluctuating beacon power, weather conditions, passing pigeons....etc)
 This gave me my training data!
 
 ### Creating the KNN classifier
@@ -158,7 +159,7 @@ You can find my implementation in this repo.
 ### Testing the model!
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MTMzMzA1MSwtMjA5MTE5NzIxNywxMj
+eyJoaXN0b3J5IjpbLTQ3MjE1OTg3OCwtMjA5MTE5NzIxNywxMj
 I0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgx
 ODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMi
 wxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
