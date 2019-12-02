@@ -1,6 +1,6 @@
 ![BalenaLocating](https://i.ibb.co/svRSnf7/logo.png)
-
+A proof of concept project used to 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0OTkwODAyMiwxMzE3NDcwODEzLDQ4Nj
-IzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbLTQ3ODUxMzcsMTk0OTkwODAyMiwxMzE3ND
+cwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
