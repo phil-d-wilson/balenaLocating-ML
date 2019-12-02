@@ -113,6 +113,7 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
 |Location|Device 1  | Device 2| Device 3|
 |--|--|--|--|
 | Office | -35 | -65 | -95 |
+
 This (dummy) example is adding a point to the models grid to show that the tag is in the office when it's closer to Device 1, further away from Device 2 and further still from Device 3. If I do that, multiple times, from each location (class) that the model *should* be able to predict which location the tag is from future readings. Let's try!
 
 ### Collecting the training data
@@ -192,11 +193,11 @@ Then there are lots of ideas for additional functionality, such as adding more t
 Or what about using that heatmap data to drive a K-Means model to detect abnormal movements, and then driving an alerting service with that? Does the robot hoover usually not go out of the front door? ALERT!!!!
 ![Alerting](https://i.ibb.co/2Md77wL/Alerting.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMDQ3MTc3LDMzNTk4NzM3NiwtMTYxNz
-ExMDkwMSwxMjY5MzgyNTIxLC0xMjQ5OTUyNTIsLTcxNTQ1NTY0
-NywtMTQ5NTA5ODgwNCw2MTA2NzAwNDQsMTI4ODc5MDgxMiwtMT
-M4OTAzNTUxMSw4NDI5NzI1MDEsMTkzNzg0ODIxOCwtMjA5MTE5
-NzIxNywxMjI0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNy
-wtMzgzMDgxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0
-OTkwODAyMl19
+eyJoaXN0b3J5IjpbMTA2Njg2OTAxOSwxOTEwNDcxNzcsMzM1OT
+g3Mzc2LC0xNjE3MTEwOTAxLDEyNjkzODI1MjEsLTEyNDk5NTI1
+MiwtNzE1NDU1NjQ3LC0xNDk1MDk4ODA0LDYxMDY3MDA0NCwxMj
+g4NzkwODEyLC0xMzg5MDM1NTExLDg0Mjk3MjUwMSwxOTM3ODQ4
+MjE4LC0yMDkxMTk3MjE3LDEyMjQyMDI2NDUsLTE2MjYwNDg4Mz
+EsNzQxMzkxMzE3LC0zODMwODE4ODAsLTE3MjI3MzU0NDUsMTk3
+NzU2MDU3MF19
 -->
