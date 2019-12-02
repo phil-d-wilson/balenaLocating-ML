@@ -167,11 +167,7 @@ The "28851-396" is the UUID Major and Minor of the tag I was testing with, by th
 The predicted class (i.e. location) is sent back from the API call.
 
 ### It works!
-<iframe width="560" height="315"
-src="https://youtu.be/1Ua-MyN-3f8" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Ua-MyN-3f8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Lessons Learned
@@ -179,9 +175,10 @@ allowfullscreen></iframe>
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODc5MDgxMiwtMTM4OTAzNTUxMSw4ND
-I5NzI1MDEsMTkzNzg0ODIxOCwtMjA5MTE5NzIxNywxMjI0MjAy
-NjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgxODgwLC
-0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3
-NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbNjEwNjcwMDQ0LDEyODg3OTA4MTIsLTEzOD
+kwMzU1MTEsODQyOTcyNTAxLDE5Mzc4NDgyMTgsLTIwOTExOTcy
+MTcsMTIyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEzOTEzMTcsLT
+M4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5
+MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1OD
+RdfQ==
 -->
