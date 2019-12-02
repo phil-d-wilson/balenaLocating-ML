@@ -137,9 +137,14 @@ First I wrote some code in a C# WebApi application which connected to the IOT Hu
             }
 Each listener added the strongest RSSI found for the specific tag. Remember I've got three sensors, so I need to find the value for each one for my training tuple.
 This was then stored in an Azure Table. I did this 7 times for each location:
+![Training Data](https://i.ibb.co/BGvmD0d/Training-Data.jpg)
+This gave me my training data!
+
+### Creating the KNN classifier
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1MjYyNzk5LDc0MTM5MTMxNywtMzgzMD
-gxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAy
-MiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zOD
+MwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4
+MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX
+0=
 -->
