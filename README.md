@@ -2,9 +2,9 @@
 A proof of concept project used to explore the [balenaCloud](https://www.balena.io/cloud/) stack for provisioning Raspberry Pi's as Bluetooth sensors, and a (simple!) KNN classifier to predict indoor positioning of iBeacons.
 
 ### The Plan:
-
+Blah blah
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcyNzA3NzUwLDE5Nzc1NjA1NzAsMTk0OT
-kwODAyMiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4
-NF19
+eyJoaXN0b3J5IjpbLTY3NzI4NzczMCwxOTc3NTYwNTcwLDE5ND
+k5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1
+ODRdfQ==
 -->
