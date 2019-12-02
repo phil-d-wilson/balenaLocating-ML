@@ -106,9 +106,14 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
   ### KNN Classification Machine Learning Algorithm
   Machine Learning (ML) is code which uses data from past runs to improve predictions made in future runs. One form of ML predictions is classifying data whereby the algorithm uses two or more predictor values to predict a class, such as the risk (class = low, medium, high) of a machine failure based on some metrics (e.g. number of hours running, temperature, operating speed). In simple terms, you train the model by feeding it examples of each class with the associated predictor values (e.g. 365 days running, temperature 150 degrees Celsius, 10,000RPM = HIGH). You then use the model to predict the class for other predictor values.
   The K-Nearest-Neighbours (KNN) algorithm is a relatively simple example of a classifier, which works by plotting all of the (normalised!) training data (in memory) like a grid, placing the unknown item in the grid, and then finding the K number of training points closest to it. Whatever the most frequent class of the neighbours is, is the predicted class of the unknown item. There are lots of [online articles](https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761?gi=89232be24566) which explain it much better than I can here.
-  For my application, what I needed to do, was put an iBeacon tag ![tag](https://lh3.googleusercontent.com/u-zc5jVe3lCfLftd4k8uX_bRkpNswLwDB9rcqjGxj57DnRNEAI2ncJfJXMOos8ONPln0OJ990GiP3Q) into each location in my house, and capture the location and the Received Signal Strength Indicator ([RSSI](https://en.wikipedia.org/wiki/Received_signal_strength_indication)) values from the three RPIs at that moment. This would form a 
+  For my application, what I needed to do, was put an iBeacon tag ![tag](https://lh3.googleusercontent.com/u-zc5jVe3lCfLftd4k8uX_bRkpNswLwDB9rcqjGxj57DnRNEAI2ncJfJXMOos8ONPln0OJ990GiP3Q) into each location in my house, and capture the location and the Received Signal Strength Indicator ([RSSI](https://en.wikipedia.org/wiki/Received_signal_strength_indication)) values from the three RPIs at that moment. This would form a tuple that I can feed into my KNN model later:
+  
+|Location|Device 1  | Device 2| Device 3|
+|--|--|--|--|
+| Office | -35 |  |  |
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njg4NzA4Myw3NDEzOTEzMTcsLTM4Mz
+eyJoaXN0b3J5IjpbLTUwODA4MDE1NSw3NDEzOTEzMTcsLTM4Mz
 A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
 MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
 ==
