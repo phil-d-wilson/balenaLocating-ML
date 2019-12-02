@@ -7,9 +7,11 @@ In order to make sure I experienced the provisioning process fully, I wanted a p
 ![Floorplan](https://i.ibb.co/pRJCqDm/Floorplan.jpg)
 My plan involved placing three Raspberry Pi 3B/3B+ devices in different downstairs rooms of my (small) house, loading them with [iBeacon](https://developer.apple.com/ibeacon/) receiving code, connecting them to Microsoft Azure via an [IOT Hub](https://azure.microsoft.com/en-gb/services/iot-hub/), pulling the data into a database, training a Machine Learning model with that data, and then trying to predict which room a tag was in. 
 ![High Level Design](https://i.ibb.co/gt2LyCK/HLD.jpg)
+### Provisioning a device:
+First things first, I needed to get a single Raspberry Pi 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTYxNDg5MiwxOTc3NTYwNTcwLDE5ND
-k5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1
-ODRdfQ==
+eyJoaXN0b3J5IjpbNDAyNTA5NjEzLDE5Nzc1NjA1NzAsMTk0OT
+kwODAyMiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4
+NF19
 -->
