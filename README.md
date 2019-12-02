@@ -181,14 +181,15 @@ The predicted class (i.e. location) is sent back from the API call.
  - It's possible to take 3 Raspberry Pi's, an iBeacon tag, and a KNN algorithm and accurately predict which room of a small house the tag is in. 
 
 ### Future Steps
-There's lots more things which could (and may!) be done from here. Adding more tags and displaying a grid of where they all are, is one. How about 
-
+There's lots more things which could (and may!) be done from here. Adding more tags and displaying a grid of where they all are, is one. How about streaming all of the telemetry through the KNN classifier and storing the locations in a heatmap dataset, so that you can track where a tag (or moreover, the thing it's attached to) spends most of it's time:
+![Heatmap HLD](https://i.ibb.co/vJYM0mV/Heatmap.jpg)
+Or what about 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDk5NTI1MiwtNzE1NDU1NjQ3LC0xND
-k1MDk4ODA0LDYxMDY3MDA0NCwxMjg4NzkwODEyLC0xMzg5MDM1
-NTExLDg0Mjk3MjUwMSwxOTM3ODQ4MjE4LC0yMDkxMTk3MjE3LD
-EyMjQyMDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zODMw
-ODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MD
-IyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
-
+eyJoaXN0b3J5IjpbMTI2OTM4MjUyMSwtMTI0OTk1MjUyLC03MT
+U0NTU2NDcsLTE0OTUwOTg4MDQsNjEwNjcwMDQ0LDEyODg3OTA4
+MTIsLTEzODkwMzU1MTEsODQyOTcyNTAxLDE5Mzc4NDgyMTgsLT
+IwOTExOTcyMTcsMTIyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEz
+OTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNT
+cwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1
+MzY1MzA1ODRdfQ==
 -->
