@@ -169,18 +169,21 @@ The predicted class (i.e. location) is sent back from the API call.
 ### It works!
 
 [![IMAGE ALT TEXT HERE](https://i.ibb.co/xFwg8Cr/YouTube.jpg)](https://youtu.be/1Ua-MyN-3f8)
+[Click to watch the video]
 
 
 ### Lessons Learned
 
+ - The Balena Cloud stack allows you to provision multiple
+
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjk2NzcyOTAsLTcxNTQ1NTY0NywtMT
-Q5NTA5ODgwNCw2MTA2NzAwNDQsMTI4ODc5MDgxMiwtMTM4OTAz
-NTUxMSw4NDI5NzI1MDEsMTkzNzg0ODIxOCwtMjA5MTE5NzIxNy
-wxMjI0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgz
-MDgxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwOD
-AyMiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbNzQ4NTAxODgxLC03MTU0NTU2NDcsLTE0OT
+UwOTg4MDQsNjEwNjcwMDQ0LDEyODg3OTA4MTIsLTEzODkwMzU1
+MTEsODQyOTcyNTAxLDE5Mzc4NDgyMTgsLTIwOTExOTcyMTcsMT
+IyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4
+MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMj
+IsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
 
 -->
