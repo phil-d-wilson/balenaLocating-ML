@@ -141,10 +141,14 @@ This was then stored in an Azure Table. I did this 7 times for each location:
 This gave me my training data!
 
 ### Creating the KNN classifier
-Initially I wanted to use the [Azure Machine Learning service](https://azure.microsoft.com/en-gb/services/machine-learning/) to make my model, train it and then use it via it's hosted Web Service. In fact I went so far as to make the model
+Initially I wanted to use the [Azure Machine Learning service](https://azure.microsoft.com/en-gb/services/machine-learning/) to make my model, train it and then use it via it's hosted Web Service. In fact I went so far as to make the model:
+![enter image description here](https://i.ibb.co/wz2wC8x/Training-Azure-Model.jpg)
+which gave good indications upon evaluation that it would be a strong predictor for tag locations:
+![enter image description here](https://i.ibb.co/4RGPJ3f/Confusion-Matrix.jpg)
+However, the Azure Ma
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDIwMjY0NSwtMTYyNjA0ODgzMSw3ND
-EzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYw
-NTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLT
-E1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbLTMwNDE2MTEyMSwxMjI0MjAyNjQ1LC0xNj
+I2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgxODgwLC0xNzIyNzM1
+NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcwODEzLD
+Q4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
