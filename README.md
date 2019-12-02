@@ -111,9 +111,12 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
 |Location|Device 1  | Device 2| Device 3|
 |--|--|--|--|
 | Office | -35 | -65 | -95 |
-This (dummy) example is adding a point to the models grid to show that the tag is in the office when it's closer to Device 1, 
+This (dummy) example is adding a point to the models grid to show that the tag is in the office when it's closer to Device 1, further away from Device 2 and further still from Device 3. If I do that, multiple times, from each location (class) that the model *should* be able to predict which location the tag is from future readings. Let's try!
+
+### Collecting the training data
+First I wrote 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzMxNTM4Miw3NDEzOTEzMTcsLTM4Mz
+eyJoaXN0b3J5IjpbMTI3ODcyMTQ0Miw3NDEzOTEzMTcsLTM4Mz
 A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
 MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
 ==
