@@ -105,9 +105,10 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
   Now I had three lots of iBeacon telemetry coming into the IOT Hub. Better do something with it all!
   ### KNN Classification Machine Learning Algorithm
   Machine Learning (ML) is code which uses data from past runs to improve predictions made in future runs. One form of ML predictions is classifying data whereby the algorithm uses two or more predictor values to predict a class, such as the risk (class = low, medium, high) of a machine failure based on some metrics (e.g. number of hours running, temperature, operating speed). In simple terms, you train the model by feeding it examples of each class with the associated predictor values (e.g. 365 days running, temperature 150 degrees Celsius, 10,000RPM = HIGH). You then use the model to predict the class for other predictor values.
-  The K-Nearest-Neighbours (KNN) algorithm is a relatively simple example of a classifier, which works by plotting all of the (normalised!) training data (in memory) like a grid, placing the unknown item in the grid, and then finding the K number of training points closest to it. Whatever the most frequent class of the neighbours is, is the predicted class of the unknown item. There are lots of online articles which explain it much better than I can here.
+  The K-Nearest-Neighbours (KNN) algorithm is a relatively simple example of a classifier, which works by plotting all of the (normalised!) training data (in memory) like a grid, placing the unknown item in the grid, and then finding the K number of training points closest to it. Whatever the most frequent class of the neighbours is, is the predicted class of the unknown item. There are lots of [online articles](https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761?gi=89232be24566) which explain it much better than I can here.
+  For my application, what I needed to do, was put an iBeacon tag ![tag](https://lh3.googleusercontent.com/u-zc5jVe3lCfLftd4k8uX_bRkpNswLwDB9rcqjGxj57DnRNEAI2ncJfJXMOos8ONPln0OJ990GiP3Q) into each location in my house
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDkxNjk0NTAsNzQxMzkxMzE3LC0zOD
+eyJoaXN0b3J5IjpbLTExNTk2ODI3OTEsNzQxMzkxMzE3LC0zOD
 MwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4
 MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX
 0=
