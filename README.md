@@ -183,13 +183,13 @@ The predicted class (i.e. location) is sent back from the API call.
 ### Future Steps
 There's lots more things which could (and may!) be done from here. Adding more tags and displaying a grid of where they all are, is one. How about streaming all of the telemetry through the KNN classifier and storing the locations in a heatmap dataset, so that you can track where a tag (or moreover, the thing it's attached to) spends most of it's time:
 ![Heatmap HLD](https://i.ibb.co/vJYM0mV/Heatmap.jpg)
-Or what about 
+Or what about using that 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2OTM4MjUyMSwtMTI0OTk1MjUyLC03MT
-U0NTU2NDcsLTE0OTUwOTg4MDQsNjEwNjcwMDQ0LDEyODg3OTA4
-MTIsLTEzODkwMzU1MTEsODQyOTcyNTAxLDE5Mzc4NDgyMTgsLT
-IwOTExOTcyMTcsMTIyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEz
-OTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNT
-cwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1
-MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbMTU2Njg4MDI4NiwxMjY5MzgyNTIxLC0xMj
+Q5OTUyNTIsLTcxNTQ1NTY0NywtMTQ5NTA5ODgwNCw2MTA2NzAw
+NDQsMTI4ODc5MDgxMiwtMTM4OTAzNTUxMSw4NDI5NzI1MDEsMT
+kzNzg0ODIxOCwtMjA5MTE5NzIxNywxMjI0MjAyNjQ1LC0xNjI2
+MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgxODgwLC0xNzIyNzM1ND
+Q1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcwODEzLDQ4
+NjIzOTA3NV19
 -->
