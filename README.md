@@ -187,16 +187,16 @@ There's lots more things which could (and may!) be done from here. Firstly there
  - Actually pulling the training data back in from Table store - I ran out of time and exported the data and put it into a `static double[][]`
  - Integrating the Azure components with the Balena API, so that you can provision additional RPi's (by burning more SD cards) and they are added into the IOT Hub and KNN classifier automatically.
 
- Adding more tags and displaying a grid of where they all are, is one. How about streaming all of the telemetry through the KNN classifier and storing the locations in a heatmap dataset, so that you can track where a tag (or moreover, the thing it's attached to) spends most of it's time:
+Then there are lots of ideas for additional functionality, such as adding more tags and displaying a grid of where they all are? How about streaming all of the telemetry through the KNN classifier and storing the locations in a heatmap dataset, so that you can track where a tag (or moreover, the thing it's attached to) spends most of it's time:
 ![Heatmap HLD](https://i.ibb.co/vJYM0mV/Heatmap.jpg)
 Or what about using that heatmap data to drive a K-Means model to detect abnormal movements, and then driving an alerting service with that? Does the robot hoover usually not go out of the front door? ALERT!!!!
 ![Alerting](https://i.ibb.co/2Md77wL/Alerting.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1OTg3Mzc2LC0xNjE3MTEwOTAxLDEyNj
-kzODI1MjEsLTEyNDk5NTI1MiwtNzE1NDU1NjQ3LC0xNDk1MDk4
-ODA0LDYxMDY3MDA0NCwxMjg4NzkwODEyLC0xMzg5MDM1NTExLD
-g0Mjk3MjUwMSwxOTM3ODQ4MjE4LC0yMDkxMTk3MjE3LDEyMjQy
-MDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zODMwODE4OD
-AsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MDIyLDEz
-MTc0NzA4MTNdfQ==
+eyJoaXN0b3J5IjpbLTE4ODY0MDY5MDUsMzM1OTg3Mzc2LC0xNj
+E3MTEwOTAxLDEyNjkzODI1MjEsLTEyNDk5NTI1MiwtNzE1NDU1
+NjQ3LC0xNDk1MDk4ODA0LDYxMDY3MDA0NCwxMjg4NzkwODEyLC
+0xMzg5MDM1NTExLDg0Mjk3MjUwMSwxOTM3ODQ4MjE4LC0yMDkx
+MTk3MjE3LDEyMjQyMDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMz
+E3LC0zODMwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwx
+OTQ5OTA4MDIyXX0=
 -->
