@@ -1,0 +1,22 @@
+FROM balenalib/raspberrypi3-python:3-build
+
+WORKDIR /app
+
+RUN apt-get update && \
+    apt-get install -y --allow-unauthenticated --no-install-recommends libcap2 libcap2-bin libboost-python1.62.0 python-pip libpython-dev python-bluez bluez bluez-tools python-dev libglib2.0-dev libboost-python-dev libboost-thread-dev libbluetooth-dev && \
+    rm -rf /var/lib/apt/lists/* 
+
+RUN pip install --upgrade pip 
+RUN pip install --upgrade setuptools
+RUN pip install azure-iot-device
+#RUN pip install azure-servicebus
+RUN pip install PyBluez
+RUN pip3 install beacontools[scan]
+
+COPY . .
+
+RUN useradd -ms /bin/bash moduleuser
+RUN setcap 'cap_net_raw,cap_net_admin+eip' $(eval readlink -f `which python`)
+USER moduleuser
+
+ENTRYPOINT [ "python", "-u", "PythonScripts/main.py" ]
