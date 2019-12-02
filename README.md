@@ -57,9 +57,10 @@ Awesome! Now to send them to the IOT Hub. I've done this part before as well, al
 Firstly, what immediately became apparent here, is that even without entering into Balena's excellent [Local Mode](https://www.balena.io/docs/learn/develop/local-mode/#develop-locally), the development-feedback loop was tight and easy to use. I pushed my app using the CLI, watched the build process run (I used Visual Studio Code and the terminal - it puts my code and build process in the same window which I like!):
 ![VSCode](https://i.ibb.co/NNgcpkM/VsCode.jpg)
 I then can watch the sensor downloading the container, updating, running and view the console output all in Balena cloud portal!!!!
-
+![Running in Balena Cloud](https://i.ibb.co/PFgsRRp/Running-In-Balena-Cloud.jpg)
+Except that ---^ wasn't the output I got to be
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTAyOTM0OCwtMzgzMDgxODgwLC0xNz
+eyJoaXN0b3J5IjpbMjA3MjIwODQyNywtMzgzMDgxODgwLC0xNz
 IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
 ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
