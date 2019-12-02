@@ -167,16 +167,18 @@ The "28851-396" is the UUID Major and Minor of the tag I was testing with, by th
 The predicted class (i.e. location) is sent back from the API call.
 
 ### It works!
-
+```
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/1Ua-MyN-3f8)
+```
 
 ### Lessons Learned
 
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQyOTcyNTAxLDE5Mzc4NDgyMTgsLTIwOT
-ExOTcyMTcsMTIyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEzOTEz
-MTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLD
-E5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1
-MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbLTE2MjUyNDA5MTYsODQyOTcyNTAxLDE5Mz
+c4NDgyMTgsLTIwOTExOTcyMTcsMTIyNDIwMjY0NSwtMTYyNjA0
+ODgzMSw3NDEzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NS
+wxOTc3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYy
+MzkwNzUsLTE1MzY1MzA1ODRdfQ==
 -->
