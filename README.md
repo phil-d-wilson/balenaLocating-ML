@@ -84,10 +84,18 @@ Once again you can see the references to bluez, but this time it's being used (a
 
     const  BeaconScanner  =  require('node-beacon-scanner');
     const  scanner  =  new  BeaconScanner();
+    scanner.startScan().then(() => {...
 grab the BLE iBeacon advertisements:
 
+    scanner.onadvertisement  = (ad) => {
+	output  =  "{\"BeaconDateTime\":\""  +  date.format(new  Date(), 'YYYY/MM/DD HH:mm:ss') +  "\",\"DeviceName\":\""  +  mac  +  "\",\"BeaconName\":\""  +  ad.iBeacon.major  +  "-"  +  ad.iBeacon.minor  +  "\",\"Rssi\":"  +  ad.rssi  +  "}"
+and ping them to the IOT hub (fingers crossed!):
+var  client  =  Client.fromConnectionString(deviceConnectionString, Protocol);
+var  message  =  new  Message(output);
+
+client.sendEvent(message);
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3OTE5Njg3OCw3NDEzOTEzMTcsLTM4Mz
+eyJoaXN0b3J5IjpbLTcwNjY2OTQyNCw3NDEzOTEzMTcsLTM4Mz
 A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
 MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
 ==
