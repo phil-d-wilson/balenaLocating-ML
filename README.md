@@ -55,8 +55,9 @@ A quick push to my BalenaLocating app using the [Balena CLI tools](https://www.b
 Awesome! Now to send them to the IOT Hub. I've done this part before as well, albeit using Microsoft's [IOT Edge](https://azure.microsoft.com/en-gb/services/iot-edge/) framework and C#. Still how hard can it be using Python?!?
 ![Disconnects](https://i.ibb.co/7bcd340/Disconnect-Exception.jpg)
 Firstly, what immediately became apparent here, is that even without entering into Balena's excellent [Local Mode](https://www.balena.io/docs/learn/develop/local-mode/#develop-locally), the development-feedback loop was tight and easy to use. I pushed my app using the CLI, watched the build process run (I used Visual Studio Code and the terminal - it puts my code and build process in the same window which I like!):
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NTI3NDQzNiwtMzgzMDgxODgwLC0xNz
-IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
-ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbLTE5Njg3ODIwOTQsLTM4MzA4MTg4MCwtMT
+cyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3
+MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
 -->
