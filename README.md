@@ -171,22 +171,15 @@ The predicted class (i.e. location) is sent back from the API call.
 [![IMAGE ALT TEXT HERE](https://i.ibb.co/LQpxQvF/YouTube.jpg)](https://youtu.be/1Ua-MyN-3f8)
 
 
-<iframe width="560" height="315"
-src="https://youtu.be/1Ua-MyN-3f8" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-
-
 ### Lessons Learned
 
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTUwOTg4MDQsNjEwNjcwMDQ0LDEyOD
-g3OTA4MTIsLTEzODkwMzU1MTEsODQyOTcyNTAxLDE5Mzc4NDgy
-MTgsLTIwOTExOTcyMTcsMTIyNDIwMjY0NSwtMTYyNjA0ODgzMS
-w3NDEzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3
-NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNz
-UsLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbLTcxNTQ1NTY0NywtMTQ5NTA5ODgwNCw2MT
+A2NzAwNDQsMTI4ODc5MDgxMiwtMTM4OTAzNTUxMSw4NDI5NzI1
+MDEsMTkzNzg0ODIxOCwtMjA5MTE5NzIxNywxMjI0MjAyNjQ1LC
+0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgxODgwLC0xNzIy
+NzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcwOD
+EzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
