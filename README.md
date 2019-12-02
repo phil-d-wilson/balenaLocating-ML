@@ -150,10 +150,14 @@ However, the Azure Machine Learning service proved cost prohibitive for me to le
  1. Finds the distance from the unknown item to the training tuples
  2. Orders the result from closest to furthest away
  3. Finds the K nearest items
+ 4. Identifies the most frequent class in the result set
+
+You can find my implementation in this repo.
+### Testing the model!
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzMTgyOTg5LDEyMjQyMDI2NDUsLTE2Mj
-YwNDg4MzEsNzQxMzkxMzE3LC0zODMwODE4ODAsLTE3MjI3MzU0
-NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MDIyLDEzMTc0NzA4MTMsND
-g2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
+eyJoaXN0b3J5IjpbLTIwOTExOTcyMTcsMTIyNDIwMjY0NSwtMT
+YyNjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjcz
+NTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMy
+w0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
 -->
