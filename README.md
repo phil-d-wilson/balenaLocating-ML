@@ -105,10 +105,10 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
   Now I had three lots of iBeacon telemetry coming into the IOT Hub. Better do something with it all!
   ### KNN Classification Machine Learning Algorithm
   Machine Learning (ML) is code which uses data from past runs to improve predictions made in future runs. One form of ML predictions is classifying data whereby the algorithm uses two or more predictor values to predict a class, such as the risk (class = low, medium, high) of a machine failure based on some metrics (e.g. number of hours running, temperature, operating speed). In simple terms, you train the model by feeding it examples of each class with the associated predictor values (e.g. 365 days running, temperature 150 degrees Celsius, 10,000RPM = HIGH). You then use the model to predict the class for other predictor values.
-  The K-Nearest-Neighbours (KNN) algorithm is a relatively simple example of a classifier, which works by plotting all of the (normalised!) training data (in memory) like a grid, placing the unknown item in the grid, and then finding the K number of training points closest to it. Whatever the most frequent class of the neighbours is, is the predicted class of the unknown item.
+  The K-Nearest-Neighbours (KNN) algorithm is a relatively simple example of a classifier, which works by plotting all of the (normalised!) training data (in memory) like a grid, placing the unknown item in the grid, and then finding the K number of training points closest to it. Whatever the most frequent class of the neighbours is, is the predicted class of the unknown item. There are lots of online articles which explain it much better than I can here.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDY4NDEzOSw3NDEzOTEzMTcsLTM4Mz
-A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
-MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
-==
+eyJoaXN0b3J5IjpbLTE2NDkxNjk0NTAsNzQxMzkxMzE3LC0zOD
+MwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4
+MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX
+0=
 -->
