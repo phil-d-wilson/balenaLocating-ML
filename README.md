@@ -1,5 +1,6 @@
-![enter image description here](https://github.com/phil-d-wilson/BalenaLocating/blob/master/logo.PNG)
+![enter image description here](https://balenalocating7132924699.file.core.windows.net/balenalocating80a2/blog/logo.PNG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
+eyJoaXN0b3J5IjpbMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1Mz
+Y1MzA1ODRdfQ==
 -->
