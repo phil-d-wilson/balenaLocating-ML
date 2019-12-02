@@ -184,14 +184,15 @@ The predicted class (i.e. location) is sent back from the API call.
 There's lots more things which could (and may!) be done from here. Firstly there are improvements to be made to this first PoC:
 
  - Using Balena environment variables for the IOT Hub connection string
- - Integrating the Azure components with the 
+ - Actually pulling the training data back in from Table s
+ - Integrating the Azure components with the Balena API, so that you can provision additional RPi's (by burning more SD cards) and they are added into the IOT Hub and KNN classifier automatically.
 
  Adding more tags and displaying a grid of where they all are, is one. How about streaming all of the telemetry through the KNN classifier and storing the locations in a heatmap dataset, so that you can track where a tag (or moreover, the thing it's attached to) spends most of it's time:
 ![Heatmap HLD](https://i.ibb.co/vJYM0mV/Heatmap.jpg)
 Or what about using that heatmap data to drive a K-Means model to detect abnormal movements, and then driving an alerting service with that? Does the robot hoover usually not go out of the front door? ALERT!!!!
 ![Alerting](https://i.ibb.co/2Md77wL/Alerting.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzM4NzIzMSwtMTYxNzExMDkwMSwxMj
+eyJoaXN0b3J5IjpbLTY1NjEzMDQ1NSwtMTYxNzExMDkwMSwxMj
 Y5MzgyNTIxLC0xMjQ5OTUyNTIsLTcxNTQ1NTY0NywtMTQ5NTA5
 ODgwNCw2MTA2NzAwNDQsMTI4ODc5MDgxMiwtMTM4OTAzNTUxMS
 w4NDI5NzI1MDEsMTkzNzg0ODIxOCwtMjA5MTE5NzIxNywxMjI0
