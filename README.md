@@ -98,10 +98,10 @@ And....
 ![IOT Hub Listener](https://i.ibb.co/kBbXm9V/Node-Messages-Receieved.jpg)
 That ----^ is a listener attached to the IOT Hub, and those events are the formatted iBeacon advertisements sent from the RPi!!!
 ### Multiple devices
-
+OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloading a docker container which received iBeacon advertisements and sent them to Azure via an IOT Hub. Next job, scale that up to three   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTA1NTQyOCw3NDEzOTEzMTcsLTM4Mz
-A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
-MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
-==
+eyJoaXN0b3J5IjpbLTE5MjQxNTI0MzgsNzQxMzkxMzE3LC0zOD
+MwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4
+MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX
+0=
 -->
