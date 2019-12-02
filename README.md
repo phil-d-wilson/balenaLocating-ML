@@ -60,9 +60,10 @@ I then can watch the sensor downloading the container, updating, running and vie
 ![Running in Balena Cloud](https://i.ibb.co/PFgsRRp/Running-In-Balena-Cloud.jpg)
 Except that ---^ wasn't the output I got to begin with, remember....this was:
 ![Disconnects](https://i.ibb.co/7bcd340/Disconnect-Exception.jpg)
-The simple job of sending my data to the IOT Hub, wasn't simple. No worries, a quick Google showed me this was a known issue with the latest version of 
+The simple job of sending my data to the IOT Hub, wasn't simple. No worries, a quick Google showed me this was a known issue with the latest version of the Azure IOT Device Python SDK ([issue#399](https://github.com/Azure/azure-iot-sdk-python/issues/399)) , so I changed my dockerfile to pull in the previous version......then this happened:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0OTQ2NjIzLC0zODMwODE4ODAsLTE3Mj
-I3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MDIyLDEzMTc0NzA4
-MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
+eyJoaXN0b3J5IjpbMTA4NzcwMDYxMSwtMzgzMDgxODgwLC0xNz
+IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
+ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
