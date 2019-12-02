@@ -100,10 +100,11 @@ That ----^ is a listener attached to the IOT Hub, and those events are the forma
 ### Multiple devices
 OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloading a docker container which received iBeacon advertisements and sent them to Azure via an IOT Hub. Next job, scale that up to three RPi's. Again, ridiculously easy: I used Etcher to burn the image twice more, plugged the cards into the Pi's and powered them up. Another 30 minutes later:
   ![Three devices](https://i.ibb.co/Cv23Qyc/Three-Devices.jpg)
-  Balena eve
+  Balena even let me tag them, so that I could remember which device was where:
+  ![Tagged devices](https://i.ibb.co/PMcNJDW/Tagged-Devices.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTY3MjM1Nyw3NDEzOTEzMTcsLTM4Mz
-A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
-MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
-==
+eyJoaXN0b3J5IjpbLTE0OTY1NDg4MTMsNzQxMzkxMzE3LC0zOD
+MwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4
+MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX
+0=
 -->
