@@ -168,7 +168,7 @@ The predicted class (i.e. location) is sent back from the API call.
 
 ### It works!
 ```
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/1Ua-MyN-3f8)
+[![IMAGE ALT TEXT HERE](https://i.ibb.co/LQpxQvF/YouTube.jpg)](https://youtu.be/1Ua-MyN-3f8)
 ```
 
 ### Lessons Learned
@@ -176,7 +176,7 @@ The predicted class (i.e. location) is sent back from the API call.
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjUyNDA5MTYsODQyOTcyNTAxLDE5Mz
+eyJoaXN0b3J5IjpbLTEzODkwMzU1MTEsODQyOTcyNTAxLDE5Mz
 c4NDgyMTgsLTIwOTExOTcyMTcsMTIyNDIwMjY0NSwtMTYyNjA0
 ODgzMSw3NDEzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NS
 wxOTc3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYy
