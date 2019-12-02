@@ -7,6 +7,8 @@ In order to make sure I experienced the provisioning process fully, I wanted a p
 ![Floorplan](https://i.ibb.co/pRJCqDm/Floorplan.jpg)
 My plan involved placing three Raspberry Pi 3B/3B+ devices in different downstairs rooms of my (small) house, loading them with [iBeacon](https://developer.apple.com/ibeacon/) receiving code, connecting them to Microsoft Azure via an [IOT Hub](https://azure.microsoft.com/en-gb/services/iot-hub/), pulling the data into a database, training a Machine Learning model with that data, and then trying to predict which room a tag was in. 
 ![High Level Design](https://i.ibb.co/gt2LyCK/HLD.jpg)
+The reason a Machine Learning model is necessary, is due to the weird and wonderful work of RF propagation. Suffice to say, it's not as simple as find the sensor with the strongest iBeacon s
+
 ### Provisioning a device:
 First things first, I needed to get a single Raspberry Pi (RPi) connected to the Balena cloud:
 ![enter image description here](https://lh3.googleusercontent.com/bF2x2blz45zA-yuZIgTSoqyIG5j4Lx0E5h1GiJ_HhIfZIMGqSkStKcg4Ue_c9KhKOmaIar79y0TIIQ)
@@ -156,8 +158,8 @@ You can find my implementation in this repo.
 ### Testing the model!
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTExOTcyMTcsMTIyNDIwMjY0NSwtMT
-YyNjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjcz
-NTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMy
-w0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbMTU3MTMzMzA1MSwtMjA5MTE5NzIxNywxMj
+I0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgx
+ODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMi
+wxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
