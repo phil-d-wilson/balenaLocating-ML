@@ -183,13 +183,14 @@ The predicted class (i.e. location) is sent back from the API call.
 ### Future Steps
 There's lots more things which could (and may!) be done from here. Adding more tags and displaying a grid of where they all are, is one. How about streaming all of the telemetry through the KNN classifier and storing the locations in a heatmap dataset, so that you can track where a tag (or moreover, the thing it's attached to) spends most of it's time:
 ![Heatmap HLD](https://i.ibb.co/vJYM0mV/Heatmap.jpg)
-Or what about using that 
+Or what about using that heatmap data to drive a K-Means model to detect abnormal movements, and then driving an alerting service with that? Does the robot hoover usually not go out of the front door? ALERT!!!!
+![Alerting](https://i.ibb.co/2Md77wL/Alerting.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2Njg4MDI4NiwxMjY5MzgyNTIxLC0xMj
-Q5OTUyNTIsLTcxNTQ1NTY0NywtMTQ5NTA5ODgwNCw2MTA2NzAw
-NDQsMTI4ODc5MDgxMiwtMTM4OTAzNTUxMSw4NDI5NzI1MDEsMT
-kzNzg0ODIxOCwtMjA5MTE5NzIxNywxMjI0MjAyNjQ1LC0xNjI2
-MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgxODgwLC0xNzIyNzM1ND
-Q1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcwODEzLDQ4
-NjIzOTA3NV19
+eyJoaXN0b3J5IjpbLTE2MTcxMTA5MDEsMTI2OTM4MjUyMSwtMT
+I0OTk1MjUyLC03MTU0NTU2NDcsLTE0OTUwOTg4MDQsNjEwNjcw
+MDQ0LDEyODg3OTA4MTIsLTEzODkwMzU1MTEsODQyOTcyNTAxLD
+E5Mzc4NDgyMTgsLTIwOTExOTcyMTcsMTIyNDIwMjY0NSwtMTYy
+NjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNT
+Q0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0
+ODYyMzkwNzVdfQ==
 -->
