@@ -174,16 +174,17 @@ The predicted class (i.e. location) is sent back from the API call.
 
 ### Lessons Learned
 
- - The Balena Cloud stack allows you to provision multiple
+ - The Balena Cloud stack allows you to provision multiple devices in minutes (with an [Etcher Pro](https://www.balena.io/etcher/pro/) it would be even quicker!)
+ - The development-feedback loop, even without using local mode, is tight and helpful.
 
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4NTAxODgxLC03MTU0NTU2NDcsLTE0OT
-UwOTg4MDQsNjEwNjcwMDQ0LDEyODg3OTA4MTIsLTEzODkwMzU1
-MTEsODQyOTcyNTAxLDE5Mzc4NDgyMTgsLTIwOTExOTcyMTcsMT
-IyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4
-MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMj
-IsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbLTE0NzE2NTM0NzcsLTcxNTQ1NTY0NywtMT
+Q5NTA5ODgwNCw2MTA2NzAwNDQsMTI4ODc5MDgxMiwtMTM4OTAz
+NTUxMSw4NDI5NzI1MDEsMTkzNzg0ODIxOCwtMjA5MTE5NzIxNy
+wxMjI0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgz
+MDgxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwOD
+AyMiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 
 -->
