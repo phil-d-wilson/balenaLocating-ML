@@ -167,7 +167,15 @@ The "28851-396" is the UUID Major and Minor of the tag I was testing with, by th
 The predicted class (i.e. location) is sent back from the API call.
 
 ### It works!
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1Ua-MyN-3f8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[![IMAGE ALT TEXT HERE](https://i.ibb.co/LQpxQvF/YouTube.jpg)](https://youtu.be/1Ua-MyN-3f8)
+
+
+<iframe width="560" height="315"
+src="https://youtu.be/1Ua-MyN-3f8" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
 
 ### Lessons Learned
@@ -175,10 +183,10 @@ The predicted class (i.e. location) is sent back from the API call.
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEwNjcwMDQ0LDEyODg3OTA4MTIsLTEzOD
-kwMzU1MTEsODQyOTcyNTAxLDE5Mzc4NDgyMTgsLTIwOTExOTcy
-MTcsMTIyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEzOTEzMTcsLT
-M4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5
-MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1OD
-RdfQ==
+eyJoaXN0b3J5IjpbLTE0OTUwOTg4MDQsNjEwNjcwMDQ0LDEyOD
+g3OTA4MTIsLTEzODkwMzU1MTEsODQyOTcyNTAxLDE5Mzc4NDgy
+MTgsLTIwOTExOTcyMTcsMTIyNDIwMjY0NSwtMTYyNjA0ODgzMS
+w3NDEzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3
+NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNz
+UsLTE1MzY1MzA1ODRdfQ==
 -->
