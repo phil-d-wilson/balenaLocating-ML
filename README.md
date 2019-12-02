@@ -97,9 +97,11 @@ and ping them to the IOT hub (fingers crossed!):
 And....
 ![IOT Hub Listener](https://i.ibb.co/kBbXm9V/Node-Messages-Receieved.jpg)
 That ----^ is a listener attached to the IOT Hub, and those events are the formatted iBeacon advertisements sent from the RPi!!!
-Multipl
+### Multiple devices
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUyNDcyNDc5LDc0MTM5MTMxNywtMzgzMD
-gxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAy
-MiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbMTY0NTA1NTQyOCw3NDEzOTEzMTcsLTM4Mz
+A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
+MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
+==
 -->
