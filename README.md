@@ -163,10 +163,17 @@ I re-used the IOT Hub sampling code from the training API call, but this time ra
                 var formattedResult = DataConverter.Convert(result);
                 var classification = _classificationService.Analyze(formattedResult);
                 var output = (Locations) classification;
-The "28851-396" is the UUID Major and Minor of the tag I was testing with, by the way. And I'm only asking for a 10 second sample of the telemetry, to keep things a bit quicker. My tag is broadcasting every 5 seconds, so this gives me two pos
+The "28851-396" is the UUID Major and Minor of the tag I was testing with, by the way. And I'm only asking for a 10 second sample of the telemetry, to keep things a bit quicker. My tag is broadcasting every 5 seconds, so this gives me two possible beacons to try and receive.
+The predicted class (i.e. location) is sent back from the API call.
+
+### It works!
+[INSERT GIF]
+
+### Les
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQzMTI1MjEzLC0yMDkxMTk3MjE3LDEyMj
-QyMDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zODMwODE4
-ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MDIyLD
-EzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
+eyJoaXN0b3J5IjpbLTEwODk2NjUyMjEsLTIwOTExOTcyMTcsMT
+IyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4
+MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMj
+IsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
+
 -->
