@@ -169,11 +169,13 @@ The predicted class (i.e. location) is sent back from the API call.
 ### It works!
 [INSERT GIF]
 
-### Les
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODk2NjUyMjEsLTIwOTExOTcyMTcsMT
-IyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4
-MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMj
-IsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
+### Lessons Learned
 
+### Future Steps
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTkzNzg0ODIxOCwtMjA5MTE5NzIxNywxMj
+I0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgx
+ODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMi
+wxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
