@@ -141,10 +141,10 @@ This was then stored in an Azure Table. I did this 7 times for each location:
 This gave me my training data!
 
 ### Creating the KNN classifier
-The
+Initially I wanted to use the [Azure Machine Learning service](https://azure.microsoft.com/en-gb/services/machine-learning/) to make my model, train it and then use it via it's hosted Web Service. In fact I went so far as to make the model
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxNDY4OTk0LC0xNjI2MDQ4ODMxLDc0MT
-M5MTMxNywtMzgzMDgxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1
-NzAsMTk0OTkwODAyMiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMT
-UzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbMTIyNDIwMjY0NSwtMTYyNjA0ODgzMSw3ND
+EzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYw
+NTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLT
+E1MzY1MzA1ODRdfQ==
 -->
