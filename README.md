@@ -105,9 +105,9 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
   Now I had three lots of iBeacon telemetry coming into the IOT Hub. Better do something with it all!
   ### KNN Classification Machine Learning Algorithm
   Machine Learning (ML) is code which uses data from past runs to improve predictions made in future runs. One form of ML predictions is classifying data whereby the algorithm uses two or more predictor values to predict a class, such as the risk (class = low, medium, high) of a machine failure based on some metrics (e.g. number of hours running, temperature, operating speed). In simple terms, you train the model by feeding it examples of each class with the associated predictor values (e.g. 365 days running, temperature 150 degrees Celsius, 10,000RPM = HIGH). You then use the model to predict the class for other predictor values.
-  The L
+  The K-Nearest-Neighbours (KNN) algorithm is a relatively simple example of a classifier, which works by plotting all of the training data (in memory) like a grid, placing the  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTM4NDUyNzgsNzQxMzkxMzE3LC0zOD
+eyJoaXN0b3J5IjpbLTE3MzkwMzYwMDksNzQxMzkxMzE3LC0zOD
 MwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4
 MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX
 0=
