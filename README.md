@@ -155,12 +155,14 @@ However, the Azure Machine Learning service proved cost prohibitive for me to le
  3. Finds the K nearest items
  4. Identifies the most frequent class in the result set
 
-You can find my implementation in this repo. I chose K=3  for my model because....I like 3
+You can find my implementation in this repo. I chose K=3  for my model because....I like 3 and it seemed to work.
 ### Testing the model!
+I re-used the IOT Hub sampling code from the training API call, but this time rather than providing a location value and storing the RSSI values, I fed it into the model and asked it to predict the location:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MjE0MDA5LC0yMDkxMTk3MjE3LDEyMj
-QyMDI2NDUsLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zODMwODE4
-ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MDIyLD
-EzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
+eyJoaXN0b3J5IjpbLTE4ODk0MDU0ODEsLTIwOTExOTcyMTcsMT
+IyNDIwMjY0NSwtMTYyNjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4
+MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMj
+IsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
+
 -->
