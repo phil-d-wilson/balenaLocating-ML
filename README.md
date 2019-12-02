@@ -54,8 +54,9 @@ A quick push to my BalenaLocating app using the [Balena CLI tools](https://www.b
 ![beacons](https://i.ibb.co/0KRsHvG/Beacons.jpg)
 Awesome! Now to send them to the IOT Hub. I've done this part before as well, albeit using Microsoft's [IOT Edge](https://azure.microsoft.com/en-gb/services/iot-edge/) framework and C#. Still how hard can it be using Python?!?
 ![Disconnects](https://i.ibb.co/7bcd340/Disconnect-Exception.jpg)
+Firstly, what immediately became apparent here, is that even without entering into Balena's excellent Local Mode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NzA2NDc3NiwtMzgzMDgxODgwLC0xNz
+eyJoaXN0b3J5IjpbMjA0ODY3MjE1OSwtMzgzMDgxODgwLC0xNz
 IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
 ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
