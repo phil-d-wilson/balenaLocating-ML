@@ -51,9 +51,10 @@ and registers a callback:
         output =  "{\"BeaconDateTime\":\""  +  '{:%Y-%m-%d:%H-%M-%S}'.format(datetime.utcnow()) +  "\",\"DeviceName\":\""  +  str(mac) +  "\",\"BeaconName\":\""  + major +  "-"  + minor +  "\",\"Rssi\":"  +  str(rssi) +  "}"
         await HUB_MANAGER.forward_event_to_output(output)
 A quick push to my BalenaLocating app using the [Balena CLI tools](https://www.balena.io/docs/reference/cli/#install-the-cli) showed me that I was receiving iBeacon advertisements:
-
+![beacons](https://i.ibb.co/0KRsHvG/Beacons.jpg)
+Awesome! Now to send them to the IOT Hub. I've done this part before as well, albeit using Microsofts IOT Edge 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxMjQ1NjM0LC0zODMwODE4ODAsLTE3Mj
-I3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4MDIyLDEzMTc0NzA4
-MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX0=
+eyJoaXN0b3J5IjpbMTAwMDA3NzAxNywtMzgzMDgxODgwLC0xNz
+IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
+ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
