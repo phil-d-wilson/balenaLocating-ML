@@ -135,9 +135,11 @@ First I wrote some code in a C# WebApi application which connected to the IOT Hu
                     DeviceValues = _collection
                 };
             }
-Each listener added the strongest RSSI found for the specific tag. Remember I've got three sensors, so I need to find the value for each 
+Each listener added the strongest RSSI found for the specific tag. Remember I've got three sensors, so I need to find the value for each one for my training tuple.
+This was then stored in an Azure Table. I did this 7 times for each location:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE4MDIyNTY4LDc0MTM5MTMxNywtMzgzMD
+eyJoaXN0b3J5IjpbODQ1MjYyNzk5LDc0MTM5MTMxNywtMzgzMD
 gxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAy
 MiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
