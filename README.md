@@ -141,10 +141,10 @@ This was then stored in an Azure Table. I did this 7 times for each location:
 This gave me my training data!
 
 ### Creating the KNN classifier
-
+The
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjYwNDg4MzEsNzQxMzkxMzE3LC0zOD
-MwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4
-MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX
-0=
+eyJoaXN0b3J5IjpbODMxNDY4OTk0LC0xNjI2MDQ4ODMxLDc0MT
+M5MTMxNywtMzgzMDgxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1
+NzAsMTk0OTkwODAyMiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMT
+UzNjUzMDU4NF19
 -->
