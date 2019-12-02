@@ -64,10 +64,9 @@ The simple job of sending my data to the IOT Hub, wasn't simple. No worries, a q
 ![OutOfMemory](https://i.ibb.co/C9m4HXj/Out-Of-Mememory.jpg)
 This is the previous error that the latest version fixed. *sigh
 #### Node.JS code
-I actually spent quite a long time (and lots of releases
+I actually spent quite a long time trying to get the Python IOT Hub code to work, since I'd not done BLE work in any other language, other than C# on Windows. However, I couldn't get past the two issues above, so I made a new dockerfile targeting Node.js
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMTE1OTMxMiw3NDEzOTEzMTcsLTM4Mz
-A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
-MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
-==
+eyJoaXN0b3J5IjpbNjQ4NTUzODk0LDc0MTM5MTMxNywtMzgzMD
+gxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAy
+MiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
