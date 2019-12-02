@@ -90,12 +90,15 @@ grab the BLE iBeacon advertisements:
     scanner.onadvertisement  = (ad) => {
 	output  =  "{\"BeaconDateTime\":\""  +  date.format(new  Date(), 'YYYY/MM/DD HH:mm:ss') +  "\",\"DeviceName\":\""  +  mac  +  "\",\"BeaconName\":\""  +  ad.iBeacon.major  +  "-"  +  ad.iBeacon.minor  +  "\",\"Rssi\":"  +  ad.rssi  +  "}"
 and ping them to the IOT hub (fingers crossed!):
-var  client  =  Client.fromConnectionString(deviceConnectionString, Protocol);
-var  message  =  new  Message(output);
 
-client.sendEvent(message);
+    var  client  =  Client.fromConnectionString(deviceConnectionString, Protocol);
+    var  message  =  new  Message(output);
+    client.sendEvent(message);
+And....
+![IOT Hub Listener](https://i.ibb.co/kBbXm9V/Node-Messages-Receieved.jpg)
+That ----^ is a listener attached to the IOT Hub, and those events are the formatted iBeacon advertisements sent from the RP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjY2OTQyNCw3NDEzOTEzMTcsLTM4Mz
+eyJoaXN0b3J5IjpbLTQzNTcwODQ3MCw3NDEzOTEzMTcsLTM4Mz
 A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
 MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
 ==
