@@ -1,7 +1,5 @@
-# BalenaLocating
-#### PoC to show indoor BLE triangulation using RaspberryPi sensors, IOT Hub and a KNN classifier model
-***
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbNDk3ODE4ODEwLC0xNTM2NTMwNTg0XX0=
 -->
