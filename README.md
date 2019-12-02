@@ -114,10 +114,9 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
 This (dummy) example is adding a point to the models grid to show that the tag is in the office when it's closer to Device 1, further away from Device 2 and further still from Device 3. If I do that, multiple times, from each location (class) that the model *should* be able to predict which location the tag is from future readings. Let's try!
 
 ### Collecting the training data
-First I wrote some code in a C# WebApi application which connected to the IOT Hub (it has four partitions, so I actually needed to spin up four listeners
+First I wrote some code in a C# WebApi application which connected to the IOT Hub (it has four partitions, so I actually needed to spin up four listeners), sampled the telemetry from a particular iBeacon UUID for 15 seconds 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDM2NTkyNDAsNzQxMzkxMzE3LC0zOD
-MwODE4ODAsLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOTQ5OTA4
-MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMwNTg0XX
-0=
+eyJoaXN0b3J5IjpbMTE5NDUxODAxLDc0MTM5MTMxNywtMzgzMD
+gxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAy
+MiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
