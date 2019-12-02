@@ -64,9 +64,26 @@ The simple job of sending my data to the IOT Hub, wasn't simple. No worries, a q
 ![OutOfMemory](https://i.ibb.co/C9m4HXj/Out-Of-Mememory.jpg)
 This is the previous error that the latest version fixed. *sigh
 #### Node.JS code
-I actually spent quite a long time trying to get the Python IOT Hub code to work, since I'd not done BLE work in any other language, other than C# on Windows. However, I couldn't get past the two issues above, so I made a new dockerfile targeting Node.js
+I actually spent quite a long time trying to get the Python IOT Hub code to work, since I'd not done BLE work in any other language, other than C# on Windows. However, I couldn't get past the two issues above, so I made a new dockerfile targeting Node.js:
+
+    FROM balenalib/raspberrypi3-node:12.7.0
+	WORKDIR /app
+	RUN apt-get update && \
+	apt-get install make g++ python2.7 bluetooth bluez libbluetooth-dev libudev-dev && \
+	rm -rf /var/lib/apt/lists/*
+	RUN ln -s /usr/bin/python2.7 /usr/bin/python
+	COPY . .
+	RUN npm install @abandonware/noble
+	RUN npm install node-beacon-scanner
+	RUN npm install azure-iot-device
+	RUN npm install azure-iot-device-mqtt
+	RUN npm install date-and-time
+	RUN JOBS=MAX npm install --production --unsafe-perm && npm cache verify && rm -rf /tmp/*
+	CMD ["npm", "start"]
+Once again you can see the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4NTUzODk0LDc0MTM5MTMxNywtMzgzMD
-gxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAy
-MiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbLTQ3OTg0MTQwMiw3NDEzOTEzMTcsLTM4Mz
+A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
+MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
+==
 -->
