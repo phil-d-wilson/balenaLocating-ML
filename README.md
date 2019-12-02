@@ -114,9 +114,30 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
 This (dummy) example is adding a point to the models grid to show that the tag is in the office when it's closer to Device 1, further away from Device 2 and further still from Device 3. If I do that, multiple times, from each location (class) that the model *should* be able to predict which location the tag is from future readings. Let's try!
 
 ### Collecting the training data
-First I wrote some code in a C# WebApi application which connected to the IOT Hub (it has four partitions, so I actually needed to spin up four listeners), sampled the telemetry from a particular iBeacon UUID for 15 seconds 
+First I wrote some code in a C# WebApi application which connected to the IOT Hub (it has four partitions, so I actually needed to spin up four listeners), sampled the telemetry for a particular iBeacon UUID for 15 seconds and returned the data:
+
+    public async Task<HubSampleSet> SampleHubData(string tagId, int sampleTimeInSeconds = 15)
+            {
+                _collection = new Dictionary<string, iBeacon>();
+                _sEventHubClient = EventHubClient.CreateFromConnectionString(SEventHubsCompatibleEndpoint);
+                var runtimeInfo = await _sEventHubClient.GetRuntimeInformationAsync();
+                var d2CPartitions = runtimeInfo.PartitionIds;
+    
+                var cts = new CancellationTokenSource();
+                cts.CancelAfter(new TimeSpan(0,0,0,sampleTimeInSeconds));
+    
+                Task.WaitAll(d2CPartitions.Select(partition => ReceiveMessagesFromDeviceAsync(partition, cts.Token, tagId, sampleTimeInSeconds)).ToArray());
+                cts.Dispose();
+                await _sEventHubClient.CloseAsync();
+    
+                return new HubSampleSet
+                {
+                    DeviceValues = _collection
+                };
+            }
+Each listener added the strongest RSSI found for the specific tag. Remember I've got three sensors, so I need to find the value for each 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NDUxODAxLDc0MTM5MTMxNywtMzgzMD
+eyJoaXN0b3J5IjpbNDE4MDIyNTY4LDc0MTM5MTMxNywtMzgzMD
 gxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAy
 MiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
