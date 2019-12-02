@@ -8,11 +8,11 @@ In order to make sure I experienced the provisioning process fully, I wanted a p
 My plan involved placing three Raspberry Pi 3B/3B+ devices in different downstairs rooms of my (small) house, loading them with [iBeacon](https://developer.apple.com/ibeacon/) receiving code, connecting them to Microsoft Azure via an [IOT Hub](https://azure.microsoft.com/en-gb/services/iot-hub/), pulling the data into a database, training a Machine Learning model with that data, and then trying to predict which room a tag was in. 
 ![High Level Design](https://i.ibb.co/gt2LyCK/HLD.jpg)
 ### Provisioning a device:
-First things first, I needed to get a single Raspberry Pi (RPi) connected to the Balena cloud. Here it is next to my iBeacon tag I was going to use for development and testing:
-
-
+First things first, I needed to get a single Raspberry Pi (RPi) connected to the Balena cloud:
+![enter image description here](https://lh3.googleusercontent.com/bF2x2blz45zA-yuZIgTSoqyIG5j4Lx0E5h1GiJ_HhIfZIMGqSkStKcg4Ue_c9KhKOmaIar79y0TIIQ)
+It's a plain RPi 3B+, with no extra hardware other than a Micro-SD card. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTgzMDEzOSwxOTc3NTYwNTcwLDE5ND
-k5MDgwMjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1
-ODRdfQ==
+eyJoaXN0b3J5IjpbLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOT
+Q5OTA4MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMw
+NTg0XX0=
 -->
