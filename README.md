@@ -168,7 +168,7 @@ The predicted class (i.e. location) is sent back from the API call.
 
 ### It works!
 
-[![IMAGE ALT TEXT HERE](https://i.ibb.co/LQpxQvF/YouTube.jpg)](https://youtu.be/1Ua-MyN-3f8)
+[![IMAGE ALT TEXT HERE](https://i.ibb.co/xFwg8Cr/YouTube.jpg)](https://youtu.be/1Ua-MyN-3f8)
 
 
 ### Lessons Learned
@@ -176,10 +176,11 @@ The predicted class (i.e. location) is sent back from the API call.
 ### Future Steps
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTQ1NTY0NywtMTQ5NTA5ODgwNCw2MT
-A2NzAwNDQsMTI4ODc5MDgxMiwtMTM4OTAzNTUxMSw4NDI5NzI1
-MDEsMTkzNzg0ODIxOCwtMjA5MTE5NzIxNywxMjI0MjAyNjQ1LC
-0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgzMDgxODgwLC0xNzIy
-NzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcwOD
-EzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+eyJoaXN0b3J5IjpbLTExNjk2NzcyOTAsLTcxNTQ1NTY0NywtMT
+Q5NTA5ODgwNCw2MTA2NzAwNDQsMTI4ODc5MDgxMiwtMTM4OTAz
+NTUxMSw4NDI5NzI1MDEsMTkzNzg0ODIxOCwtMjA5MTE5NzIxNy
+wxMjI0MjAyNjQ1LC0xNjI2MDQ4ODMxLDc0MTM5MTMxNywtMzgz
+MDgxODgwLC0xNzIyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwOD
+AyMiwxMzE3NDcwODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
+
 -->
