@@ -1,6 +1,6 @@
-![enter image description here](https://ibb.co/wNgHVkt)
+![BalenaLocating](https://i.ibb.co/svRSnf7/logo.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MzM1MDQ3NSwxMzE3NDcwODEzLDQ4Nj
+eyJoaXN0b3J5IjpbMTk0OTkwODAyMiwxMzE3NDcwODEzLDQ4Nj
 IzOTA3NSwtMTUzNjUzMDU4NF19
 -->
