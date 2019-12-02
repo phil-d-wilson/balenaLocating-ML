@@ -80,9 +80,9 @@ I actually spent quite a long time trying to get the Python IOT Hub code to work
 	RUN npm install date-and-time
 	RUN JOBS=MAX npm install --production --unsafe-perm && npm cache verify && rm -rf /tmp/*
 	CMD ["npm", "start"]
-Once again you can see the 
+Once again you can see the references to bluez, but this time it's being used (along with make and g++) to build the @abandonware/noble  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3OTg0MTQwMiw3NDEzOTEzMTcsLTM4Mz
+eyJoaXN0b3J5IjpbLTQ4MDE5OTA2Nyw3NDEzOTEzMTcsLTM4Mz
 A4MTg4MCwtMTcyMjczNTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgw
 MjIsMTMxNzQ3MDgxMyw0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ
 ==
