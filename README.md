@@ -10,9 +10,10 @@ My plan involved placing three Raspberry Pi 3B/3B+ devices in different downstai
 ### Provisioning a device:
 First things first, I needed to get a single Raspberry Pi (RPi) connected to the Balena cloud:
 ![enter image description here](https://lh3.googleusercontent.com/bF2x2blz45zA-yuZIgTSoqyIG5j4Lx0E5h1GiJ_HhIfZIMGqSkStKcg4Ue_c9KhKOmaIar79y0TIIQ)
-It's a plain RPi 3B+, with no extra hardware other than a Micro-SD card. 
+It's a plain RPi 3B+, with no extra hardware other than a Micro-SD card.
+I signed up for a free Balena Cloud account, added a new application called BalenaLocating, and added a device. I selected a development image for the RPi, configure 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjI3MzU0NDUsMTk3NzU2MDU3MCwxOT
-Q5OTA4MDIyLDEzMTc0NzA4MTMsNDg2MjM5MDc1LC0xNTM2NTMw
-NTg0XX0=
+eyJoaXN0b3J5IjpbLTE0NjQ4NzEwODgsLTE3MjI3MzU0NDUsMT
+k3NzU2MDU3MCwxOTQ5OTA4MDIyLDEzMTc0NzA4MTMsNDg2MjM5
+MDc1LC0xNTM2NTMwNTg0XX0=
 -->
