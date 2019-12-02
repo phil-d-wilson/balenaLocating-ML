@@ -38,11 +38,26 @@ And then call the Python script:
    
 
     scanner = BeaconScanner(callback)
+    scanner.start()
+and registers a callback:
 
-scanner.start()
+    async  def  callback(bt_addr, rssi, packet, additional_info):
+        global HUB_MANAGER
+        uuid = packet.uuid.upper()
+        major =  str(packet.major)
+        minor =  str(packet.minor)
+    
+    
+      
+    
+    print("Beacon found - UUID = %s, Major = %s, Minor = %s, RSSI = %s"  % (uuid, major, minor, str(rssi)))
+    
+    output =  "{\"BeaconDateTime\":\""  +  '{:%Y-%m-%d:%H-%M-%S}'.format(datetime.utcnow()) +  "\",\"DeviceName\":\""  +  str(mac) +  "\",\"BeaconName\":\""  + major +  "-"  + minor +  "\",\"Rssi\":"  +  str(rssi) +  "}"
+    
+    await HUB_MANAGER.forward_event_to_output(output)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMzI5NzU2OCwtMzgzMDgxODgwLC0xNz
+eyJoaXN0b3J5IjpbMTE2MjAzNTUwNiwtMzgzMDgxODgwLC0xNz
 IyNzM1NDQ1LDE5Nzc1NjA1NzAsMTk0OTkwODAyMiwxMzE3NDcw
 ODEzLDQ4NjIzOTA3NSwtMTUzNjUzMDU4NF19
 -->
