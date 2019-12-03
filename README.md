@@ -185,7 +185,7 @@ The predicted class (i.e. location) is sent back from the API call.
 There's lots more things which could (and may!) be done from here. Firstly there are improvements to be made to this first PoC:
 
  - Using Balena environment variables for the IOT Hub connection string
- ~~- Actually pulling the training data back in from Table store - I ran out of time and exported the data and put it into a `static double[][]`~~
+ - ~~-Actually pulling the training data back in from Table store - I ran out of time and exported the data and put it into a `static double[][]`~~
  - Integrating the Azure components with the Balena API, so that you can provision additional RPi's (by burning more SD cards) and they are added into the IOT Hub and KNN classifier automatically.
 
 Then there are lots of ideas for additional functionality, such as adding more tags and displaying a grid of where they all are? How about streaming all of the telemetry through the KNN classifier and storing the locations in a heatmap dataset, so that you can track where a tag (or moreover, the thing it's attached to) spends most of it's time:
