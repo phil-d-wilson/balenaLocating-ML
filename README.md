@@ -7,6 +7,8 @@ In order to make sure I experienced the provisioning process fully, I wanted a p
 ![Floorplan](https://i.ibb.co/pRJCqDm/Floorplan.jpg)
 My plan involved placing three Raspberry Pi 3B/3B+ devices in different downstairs rooms of my (small) house, loading them with [iBeacon](https://developer.apple.com/ibeacon/) receiving code, connecting them to Microsoft Azure via an [IOT Hub](https://azure.microsoft.com/en-gb/services/iot-hub/), pulling the data into a database, training a Machine Learning model with that data, and then trying to predict which room a tag was in. 
 ![High Level Design](https://i.ibb.co/gt2LyCK/HLD.jpg)
+The reason a Machine Learning model is necessary, is due to the weird and wonderful work of RF propagation. Suffice to say, it's not as simple as find the sensor receiving the strongest iBeacon signal!
+
 ### Provisioning a device:
 First things first, I needed to get a single Raspberry Pi (RPi) connected to the Balena cloud:
 ![enter image description here](https://lh3.googleusercontent.com/bF2x2blz45zA-yuZIgTSoqyIG5j4Lx0E5h1GiJ_HhIfZIMGqSkStKcg4Ue_c9KhKOmaIar79y0TIIQ)
@@ -111,6 +113,7 @@ OK, so now I had a single Raspberry Pi, connected to the Balena Cloud, downloadi
 |Location|Device 1  | Device 2| Device 3|
 |--|--|--|--|
 | Office | -35 | -65 | -95 |
+
 This (dummy) example is adding a point to the models grid to show that the tag is in the office when it's closer to Device 1, further away from Device 2 and further still from Device 3. If I do that, multiple times, from each location (class) that the model *should* be able to predict which location the tag is from future readings. Let's try!
 
 ### Collecting the training data
@@ -138,6 +141,7 @@ First I wrote some code in a C# WebApi application which connected to the IOT Hu
 Each listener added the strongest RSSI found for the specific tag. Remember I've got three sensors, so I need to find the value for each one for my training tuple.
 This was then stored in an Azure Table. I did this 7 times for each location:
 ![Training Data](https://i.ibb.co/BGvmD0d/Training-Data.jpg)
+Lots of factors affect the received signal (e.g. reflections, signal clashes, fluctuating beacon power, weather conditions, passing pigeons....etc) which is why you need multiple tuples per class.
 This gave me my training data!
 
 ### Creating the KNN classifier
@@ -152,12 +156,48 @@ However, the Azure Machine Learning service proved cost prohibitive for me to le
  3. Finds the K nearest items
  4. Identifies the most frequent class in the result set
 
-You can find my implementation in this repo.
+You can find my implementation in this repo. I chose K=3  for my model because....I like 3 and it seemed to work.
 ### Testing the model!
+I re-used the IOT Hub sampling code from the training API call, but this time rather than providing a location value and storing the RSSI values, I fed it into the model and asked it to predict the location:
 
+     var result = await _hubService.SampleHubData("28851-396", 10);
+                var formattedResult = DataConverter.Convert(result);
+                var classification = _classificationService.Analyze(formattedResult);
+                var output = (Locations) classification;
+The `28851-396` is the UUID Major and Minor of the tag I was testing with, by the way. And I'm only asking for a 10 second sample of the telemetry, to keep things a bit quicker. My tag is broadcasting every 5 seconds, so this gives me two possible beacons to try and receive.
+The predicted class (i.e. location) is sent back from the API call.
+
+### It works!
+
+[![IMAGE ALT TEXT HERE](https://i.ibb.co/xFwg8Cr/YouTube.jpg)](https://youtu.be/1Ua-MyN-3f8)
+[Click to watch the video]
+
+
+### Lessons Learned
+
+ - The Balena Cloud stack allows you to provision multiple devices in minutes (with an [Etcher Pro](https://www.balena.io/etcher/pro/) it would be even quicker!)
+ - The Balena development-feedback loop, even without using local mode, is tight and helpful.
+ - Microsoft need to spend more time testing their Python SDKs
+ - Apparently I can write (simple) Node.JS code rather quickly
+ - It's possible to take 3 Raspberry Pi's, an iBeacon tag, and a KNN algorithm and accurately predict which room of a small house the tag is in. 
+
+### Future Steps
+There's lots more things which could (and may!) be done from here. Firstly there are improvements to be made to this first PoC:
+
+ - Using Balena environment variables for the IOT Hub connection string
+ - Actually pulling the training data back in from Table store - I ran out of time and exported the data and put it into a `static double[][]`
+ - Integrating the Azure components with the Balena API, so that you can provision additional RPi's (by burning more SD cards) and they are added into the IOT Hub and KNN classifier automatically.
+
+Then there are lots of ideas for additional functionality, such as adding more tags and displaying a grid of where they all are? How about streaming all of the telemetry through the KNN classifier and storing the locations in a heatmap dataset, so that you can track where a tag (or moreover, the thing it's attached to) spends most of it's time:
+![Heatmap HLD](https://i.ibb.co/vJYM0mV/Heatmap.jpg)
+Or what about using that heatmap data to drive a K-Means model to detect abnormal movements, and then driving an alerting service with that? Does the robot hoover usually not go out of the front door? ALERT!!!!
+![Alerting](https://i.ibb.co/2Md77wL/Alerting.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTExOTcyMTcsMTIyNDIwMjY0NSwtMT
-YyNjA0ODgzMSw3NDEzOTEzMTcsLTM4MzA4MTg4MCwtMTcyMjcz
-NTQ0NSwxOTc3NTYwNTcwLDE5NDk5MDgwMjIsMTMxNzQ3MDgxMy
-w0ODYyMzkwNzUsLTE1MzY1MzA1ODRdfQ==
+eyJoaXN0b3J5IjpbMTA2Njg2OTAxOSwxOTEwNDcxNzcsMzM1OT
+g3Mzc2LC0xNjE3MTEwOTAxLDEyNjkzODI1MjEsLTEyNDk5NTI1
+MiwtNzE1NDU1NjQ3LC0xNDk1MDk4ODA0LDYxMDY3MDA0NCwxMj
+g4NzkwODEyLC0xMzg5MDM1NTExLDg0Mjk3MjUwMSwxOTM3ODQ4
+MjE4LC0yMDkxMTk3MjE3LDEyMjQyMDI2NDUsLTE2MjYwNDg4Mz
+EsNzQxMzkxMzE3LC0zODMwODE4ODAsLTE3MjI3MzU0NDUsMTk3
+NzU2MDU3MF19
 -->
