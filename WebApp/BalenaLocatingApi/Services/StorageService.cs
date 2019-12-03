@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using BalenaLocatingApi.Data;
 using BalenaLocatingApi.Models;
 using Microsoft.Azure.Cosmos.Table;
 
@@ -7,14 +9,14 @@ namespace BalenaLocatingApi.Services
 {
     public class StorageService
     {
-        private CloudTable _table;
+        private readonly CloudTable _table;
 
         public StorageService()
         {
             _table = CreateTableAsync().Result;
         }
 
-        public async Task<TrainingEntry> InsertTrainingEntryAsync(TrainingEntry entity)
+        public async Task InsertTrainingEntryAsync(TrainingEntry entity)
         {
             try
             {
@@ -26,8 +28,6 @@ namespace BalenaLocatingApi.Services
                 {
                     Console.WriteLine("Request Charge of InsertOrMerge Operation: " + result.RequestCharge);
                 }
-
-                return insertedCustomer;
             }
             catch (StorageException e)
             {
@@ -37,7 +37,26 @@ namespace BalenaLocatingApi.Services
             }
         }
 
-        private async Task<CloudTable> CreateTableAsync()
+        public double[][] GetDataAsync()
+        {
+            var output = new List<double[]>();
+            var entities = _table.ExecuteQuery(new TableQuery<TrainingEntry>());
+            var index = 1;
+            foreach (var entity in entities)
+            {
+                var newEntry = new double[]
+                {
+                    index++, entity.Device1, entity.Device2, entity.Device3,
+                    (int) Enum.Parse(typeof(Locations), entity.Location)
+                };
+
+                output.Add(newEntry);
+            }
+
+            return output.ToArray();
+        }
+
+        private static async Task<CloudTable> CreateTableAsync()
         {
             CloudStorageAccount storageAccount;
             try

@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/WebApp/BalenaLocatingApi/.vs/BalenaLocatingApi
+/WebApp/BalenaLocatingApi/bin
+/WebApp/BalenaLocatingApi/obj
+/WebApp/BalenaLocatingApi/Properties

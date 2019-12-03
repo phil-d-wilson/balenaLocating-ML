@@ -27,7 +27,7 @@ namespace BalenaLocatingApi.Controllers
         {
             var result = await _hubService.SampleHubData("28851-396", 10);
             var formattedResult = DataConverter.Convert(result);
-            var classification = _classificationService.Analyze(formattedResult);
+            var classification = _classificationService.Classify(formattedResult);
             var output = (Locations) classification;
 
             return base.Content(output.ToString(), "text/html", Encoding.UTF8);
