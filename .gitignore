@@ -7,3 +7,5 @@
 /WebApp/BalenaLocatingApi/bin
 /WebApp/BalenaLocatingApi/obj
 /WebApp/BalenaLocatingApi/Properties
+.vscode/launch.json
+.vscode/tasks.json
