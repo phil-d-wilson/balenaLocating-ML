@@ -3,7 +3,7 @@ PoC to show indoor BLE triangulation using RaspberryPi sensors and a KNN classif
 
 ![Floorplan](https://i.ibb.co/pRJCqDm/Floorplan.jpg)
 
-Given the above floorplan and placement of devices, training data is captured for each room. The training data is then used to sample sensor values to predict, via the KNN, where a BLE beacon is located.
+The above floorplan shows the placement of devices. Training data is captured for each room. The training data is then used to sample sensor values to predict, via the KNN, where a BLE beacon is located.
 
 ### Simple KNN classifier
 
